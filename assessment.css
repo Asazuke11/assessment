@@ -1,0 +1,128 @@
+body{
+  background-color: black;
+}
+
+/*******************************
+
+//.main(アプリの全体のサイズと背景の設定)//
+@size 812 x 375 
+@背景
+・画像(放射線以外は透過):diagonal_line.png
+・下地の色：rgb(231, 230, 142)
+
+@z-index数値(レイヤー)
+1-
+  .main
+  #character(キャラクターの画像:akane_right.png <img>)
+
+2-
+  .z-index2 
+  (imgタグがz-index効かない様なのでdivでbox要素に変えただけのclassです)
+  #title(タイトルロゴ画像:/title_log.png <img>)
+
+3-
+  .z-index3(背景画像(ふきだし)/balloon.png <background>)
+    250 x 132 px
+  h2.comment
+   (セリフテキストエリア)
+
+@font-family: 'M PLUS 1p', sans-serif;
+
+*********************************/
+
+
+.main{
+  position: relative;
+  margin-top:20px;
+  margin-right: auto;
+  margin-left:auto;
+  width:812px;
+  height: 350px;
+  background-color: rgb(231, 230, 142);
+  background-image: url(./images/diagonal_line.png);
+  transform: rotateZ(-1deg);
+  z-index: 1;
+}
+
+#character{
+  position: absolute;
+  right: -10px;
+  bottom: 0px;
+  animation:buruburu 0.1s infinite ease-in-out alternate;
+}
+
+.z-index2{
+  position: absolute;
+  z-index: 2;
+}
+
+#title{
+  animation:fuwafuwa 4s infinite ease-in-out alternate;
+}
+
+
+.z-index3{
+  position: absolute;
+  background-image: url(./images/balloon.png);
+  height: 132px;
+  width:250px;
+  top:-50px;
+  right:0px;
+  text-align: center;
+  overflow: hidden;
+  z-index: 3;
+}
+
+
+.comment{
+  font-size:30px;
+  font-family: 'M PLUS 1p', sans-serif;
+}
+
+#title{
+  animation:fuwafuwa 4s infinite ease-in-out alternate;
+}
+
+/* ゆっくり上下 */
+@keyframes fuwafuwa {
+  0% {transform:translate(0%,0);}
+  50% {transform:translate(0%,-5px);}
+  100% {transform:translate(0%,0);}
+}
+
+/* 左右に揺れる */
+@keyframes buruburu {
+  0% {transform:translate(0%,0);}
+  50% {transform:translate(3px,0);}
+  100% {transform:translate(0%,0);}
+}
+
+.info{
+  position: relative;
+  margin-top:50px;
+  margin-right: auto;
+  margin-left:auto;
+  width:812px;
+  height: 350px;
+  background-color: rgb(255, 255, 255);
+  background-image: url(./images/diagonal_line.png);
+  z-index: 1;
+  transform: rotateZ(1deg);
+}
+
+.info img{
+  float: left;
+  margin-left:40px;
+  filter: drop-shadow(1px 0px 5px rgb(138, 137, 137));
+}
+
+.text-area{
+  position: absolute;
+  top: 30px;
+  right:30px;
+  padding:10px;
+  background-color: rgba(137, 43, 226, 0.185);
+  width:500px;
+  color:rgb(119, 73, 245);
+  border:10px double snow;
+}

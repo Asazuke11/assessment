@@ -3,31 +3,8 @@ body{
 }
 
 /*******************************
-
-//.main(アプリの全体のサイズと背景の設定)//
-@size 812 x 375 
-@背景
-・画像(放射線以外は透過):diagonal_line.png
-・下地の色：rgb(231, 230, 142)
-
-@z-index数値(レイヤー)
-1-
-  .main
-  #character(キャラクターの画像:akane_right.png <img>)
-
-2-
-  .z-index2 
-  (imgタグがz-index効かない様なのでdivでbox要素に変えただけのclassです)
-  #title(タイトルロゴ画像:/title_log.png <img>)
-
-3-
-  .z-index3(背景画像(ふきだし)/balloon.png <background>)
-    250 x 132 px
-  h2.comment
-   (セリフテキストエリア)
-
+@１コマのsize 812 x 375 
 @font-family: 'M PLUS 1p', sans-serif;
-
 *********************************/
 
 
@@ -131,6 +108,12 @@ body{
   font-family: 'M PLUS 1p', sans-serif;
   writing-mode: vertical-rl;
   text-align: center;
+}
+
+.assess{
+  position: absolute;
+  top: 30px;
+  left:80px;
 }
 
 .info{

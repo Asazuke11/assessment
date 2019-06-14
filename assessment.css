@@ -1,5 +1,5 @@
 body{
-  background-color: black;
+  background-color: rgb(248, 140, 136);
 }
 
 /*******************************
@@ -41,6 +41,7 @@ body{
   background-color: rgb(231, 230, 142);
   background-image: url(./images/diagonal_line.png);
   transform: rotateZ(-1deg);
+  border:15px double snow;
   z-index: 1;
 }
 
@@ -49,6 +50,7 @@ body{
   right: -10px;
   bottom: 0px;
   animation:buruburu 0.1s infinite ease-in-out alternate;
+  z-index: 2;
 }
 
 .z-index2{
@@ -97,6 +99,40 @@ body{
   100% {transform:translate(0%,0);}
 }
 
+.result{
+  position: relative;
+  margin-top:50px;
+  margin-right: auto;
+  margin-left:auto;
+  width:812px;
+  height: 350px;
+  overflow: hidden;
+  background-color: rgb(173, 157, 245);
+  background-image: url(./images/diagonal_line.png);
+  z-index: 1;
+  border:15px double snow;
+  transform: rotateZ(1deg);
+}
+
+#result_akane{
+  position: absolute;
+  right:100px;
+  bottom:-50px;
+}
+
+.result_fukidasi{
+  position: absolute;
+  right:30px;
+  top:80px;
+  width: 90px;
+  height: 185px;
+  background-image: url(./images/tnm90x185.png);
+  font-size:15px;
+  font-family: 'M PLUS 1p', sans-serif;
+  writing-mode: vertical-rl;
+  text-align: center;
+}
+
 .info{
   position: relative;
   margin-top:50px;
@@ -107,7 +143,8 @@ body{
   background-color: rgb(255, 255, 255);
   background-image: url(./images/diagonal_line.png);
   z-index: 1;
-  transform: rotateZ(1deg);
+  border:15px double snow;
+  transform: rotateZ(-1deg);
 }
 
 .info img{
@@ -125,4 +162,76 @@ body{
   width:500px;
   color:rgb(119, 73, 245);
   border:10px double snow;
+}
+
+.mask{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:812px;
+  height: 350px;
+  overflow: hidden;
+}
+#star1{
+  position: absolute;
+  left:-50px;
+  bottom:0px;
+  font-size: 40px;
+  color: rgba(240, 248, 255, 0.664);
+  width: 50px;
+  height: 50px;
+  animation:shuwashuwa 6s infinite ease-in normal;
+  animation-delay:2s;
+}
+#star2{
+  position: absolute;
+  left:200px;
+  bottom:-50px;
+  font-size: 40px;
+  color: rgba(240, 248, 255, 0.822);
+  width: 50px;
+  height: 50px;
+  animation:shuwashuwa 4s infinite ease-in reverse;
+  animation-delay:3s;
+}
+
+#star3{
+  position: absolute;
+  left:-100px;
+  bottom:0px;
+  font-size: 140px;
+  color: rgba(240, 248, 255, 0.24);
+  animation:kaiten 10s infinite ease-in normal;
+  animation-delay:1s;
+}
+
+#star4{
+  position: absolute;
+  left:-100px;
+  bottom:300px;
+  font-size: 80px;
+  color: rgba(240, 248, 255, 0.24);
+  animation:kaiten 10s infinite ease-in reverse;
+  animation-delay:3s;
+}
+
+@keyframes shuwashuwa {
+  from{
+    transform:translate(0,0) rotateZ(0deg);
+    opacity:1;
+  
+  }
+  to {
+    transform:translate(150px,-380px) rotateZ(360deg);
+    opacity:0;
+  }
+}
+
+@keyframes kaiten {
+  from{
+    transform:translate(0,0) rotateZ(0deg);
+  }
+  to {
+    transform:translate(800px,100px) rotateZ(360deg);
+  }
 }

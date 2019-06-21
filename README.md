@@ -1,3 +1,3 @@
 # assessment
-# assessment
-# assessment
+N予備校の名前診断あぷりです。
+*作りかけのものです

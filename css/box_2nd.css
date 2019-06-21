@@ -1,0 +1,121 @@
+
+
+.input-screen{
+  position: relative;
+  margin-top:15px;
+  margin-right: auto;
+  margin-left:auto;
+  width:790px;
+  height: 340px;
+  overflow: hidden;
+  background: linear-gradient( 0deg, rgba(173, 157, 245, 0.253), rgba(255, 255, 255, 0)),url(../images/dotto.png);
+  z-index: 1;
+  border:6px solid rgb(0, 0, 0);
+
+}
+
+#input_akane{
+  position: absolute;
+  left:50%;
+  transform: translate(-50%,0);
+  bottom:-25px;
+  z-index: 3;
+}
+
+#think_akane{
+  position: absolute;
+  left:50%;
+  transform: translate(-50%,0);
+  bottom:-80px;
+  display: none;
+  z-index: 3;
+}
+
+.input_fukidasi{
+  position: absolute;
+  right:230px;
+  top:130px;
+  width: 90px;
+  height: 185px;
+  background-image: url(../images/tnm90x185.png);
+  font-size:15px;
+  font-family: 'M PLUS 1p', sans-serif;
+  writing-mode: vertical-rl;
+  text-align: center;
+  z-index: 5;
+}
+
+.input-area{
+  position: relative;
+  width: 300px;
+  text-align: right;
+  margin-top:30px;
+  margin-right: auto;
+  margin-left:auto;
+  color: snow;
+  z-index: 5;
+}
+
+input:focus {
+  background-color:#ccffcc;
+}
+
+
+#user-name{
+  width:295px;
+  height:20px;
+  border-radius: 5px;
+}
+
+
+#moji1{
+  position: absolute;
+  display: none;
+  left:-50px;
+  bottom:0px;
+  font-size: 40px;
+  color: rgba(240, 248, 255, 0.24);
+  animation:kaiten 10s infinite ease-in normal;
+}
+
+#moji2{
+  position: absolute;
+  display: none;
+  left:-100px;
+  bottom:0px;
+  font-size: 20px;
+  color: rgba(240, 248, 255, 0.664);
+  animation:shuwashuwa 6s infinite ease-in normal;
+}
+
+#moji3{
+  position: absolute;
+  display: none;
+  left:200px;
+  bottom:-50px;
+  font-size: 20px;
+  color: rgba(240, 248, 255, 0.822);
+  animation:shuwashuwa 4s infinite ease-in reverse;
+}
+
+#moji4{
+  position: absolute;
+  display: none;
+  left:-100px;
+  bottom:0px;
+  font-size: 8px;
+  color: rgba(240, 248, 255, 0.24);
+  animation:kaiten 10s infinite ease-in normal;
+}
+
+#moji5{
+  position: absolute;
+  top:30px;
+  left:310px;
+  font-size:50px;
+  color: snow;
+  text-shadow: 0 1px 10px rgba(145, 116, 250, 0.5);
+  z-index: 6;
+  display: none;
+  animation:tenmetu2 3s infinite ease-in normal;
+}

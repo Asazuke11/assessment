@@ -1,0 +1,31 @@
+
+.info{
+  position: relative;
+  margin-top:30px;
+  margin-right: auto;
+  margin-left:auto;
+  width:790px;
+  height: 340px;
+  background-color: rgb(255, 255, 255);
+  background-image: url(../images/diagonal_line.png);
+  border:15px double snow;
+}
+
+.text-area{
+  position: absolute;
+  top: 30px;
+  right:30px;
+  padding:10px;
+  background-color: rgba(137, 43, 226, 0.185);
+  width:500px;
+  color:rgb(119, 73, 245);
+  border:10px double snow;
+  z-index: 1;
+}
+
+.img_a{
+  position: absolute;
+  margin-left: 30px;
+  filter: drop-shadow(1px 0px 5px rgb(138, 137, 137));
+  z-index: 3;
+}

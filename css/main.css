@@ -1,0 +1,33 @@
+/*********************************************
+*@CSSファイル
+* main.css:　　　全体&bodyの設定
+* box_1st.css
+* box_2nd.css
+* box_3nd.css
+* css_anime.css
+*
+**********************************************
+*
+*@コマのサイズ 
+*  width:812px
+*  height:350px
+*
+*@使用font:googlefont https://fonts.google.com/
+* <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p:900&display=swap" rel="stylesheet">
+* font-family: 'M PLUS 1p', sans-serif;
+*
+*@色
+* body rgb(248, 140, 136)
+* 枠線 snow
+* 文字色 black
+*
+********************************************/
+body{
+  background-color: rgb(248, 140, 136);
+  font-family: 'M PLUS 1p', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: snow;
+  }

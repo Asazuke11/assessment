@@ -1,0 +1,117 @@
+/* .title-screen{
+  display: none;
+} */
+
+.main{
+  position: relative;
+  width:790px;
+  height: 340px;
+  margin-right: auto;
+  margin-left:auto;
+  background-color: rgb(231, 230, 142);
+  background-image: url(../images/diagonal_line.png);
+  background-repeat: no-repeat;
+  border:6px solid rgb(0, 0, 0);
+}
+
+#character-title{
+  position: absolute;
+  right: -10px;
+  bottom: 0px;
+  width:350px;
+  height: 350px;
+  animation:buruburu 0.1s infinite ease-in-out alternate;
+  z-index: 2;
+}
+
+#title-logo{
+  position: absolute;
+  top:-30px;
+  left:0px;
+  width:512px;
+  height: 343px;
+  z-index: 3;
+  animation:fuwafuwa 4s infinite ease-in-out alternate;
+}
+
+#Nlogo{
+  position: absolute;
+  width:120px;
+  height: 25px;
+  margin: 10px;
+}
+
+.fukidasi_1st{
+  position: absolute;
+  background-image: url(../images/balloon.png);
+  height: 132px;
+  width:250px;
+  top:-20px;
+  right:0px;
+  text-align: center;
+  font-size:30px;
+  overflow: hidden;
+  z-index: 4;
+}
+
+.start{
+  position: absolute;
+  right:50px;
+  bottom:-25px;
+  font-size:50px;
+  text-shadow: 0 1px 10px rgba(27, 15, 15, 0.5);
+  z-index: 6;
+  animation:tenmetu 3s infinite ease-in alternate;
+}
+
+
+.mask{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:812px;
+  height: 340px;
+  overflow: hidden;
+}
+#star1{
+  position: absolute;
+  left:-50px;
+  bottom:0px;
+  font-size: 40px;
+  color: rgba(240, 248, 255, 0.664);
+  width: 50px;
+  height: 50px;
+  animation:shuwashuwa 6s infinite ease-in normal;
+  animation-delay:1s;
+}
+#star2{
+  position: absolute;
+  left:200px;
+  bottom:-50px;
+  font-size: 40px;
+  color: rgba(240, 248, 255, 0.822);
+  width: 50px;
+  height: 50px;
+  animation:shuwashuwa 4s infinite ease-in reverse;
+  animation-delay:0s;
+}
+
+#star3{
+  position: absolute;
+  left:-100px;
+  bottom:0px;
+  font-size: 140px;
+  color: rgba(240, 248, 255, 0.24);
+  animation:kaiten 10s infinite ease-in normal;
+  animation-delay:1s;
+}
+
+#star4{
+  position: absolute;
+  left:-100px;
+  bottom:300px;
+  font-size: 80px;
+  color: rgba(240, 248, 255, 0.24);
+  animation:kaiten 10s infinite ease-in reverse;
+  animation-delay:0s;
+}

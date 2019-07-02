@@ -58,20 +58,18 @@ function kekka() {
 }
 
 assessmentButton.onclick = () => {
-
+  const userName = userNameInput.value;
+  if (userName.length === 0) {
+    commentarea.innerHTML = "<br>名前がなきゃ<br>はじまらんでー"
+    return;
+  }
   BGM.music.volume = 0.2;
   BGM.music.play();
   setInterval(opa_to_0, 200);
   setTimeout(kaiseki, 3000);
   setTimeout(kekka, 10000);
 
-
   commentarea.innerHTML = "<br>いいとこ、<br>あるかなー？"
-
-  const userName = userNameInput.value;
-  if (userName.length === 0) {
-    return;
-  }
 
   // 診断結果表示エリアの作成
   removeAllChildren(resultDivided);

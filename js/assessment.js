@@ -83,8 +83,31 @@ assessmentButton.onclick = () => {
   resultDivided.appendChild(paragraph);
 
   // TODO ツイートエリアの作成
+  removeAllChildren(tweetDivided);
+  const anchor = document.createElement('a');
+  const hrefValue = 'https://twitter.com/intent/tweet?button_hashtag='
+    + encodeURIComponent('あかねの適当診断')
+    + '&ref_src=twsrc%5Etfw';
+  anchor.setAttribute('href', hrefValue);
+  anchor.className = 'twitter-hashtag-button';
+  anchor.setAttribute('data-text', result);
+  anchor.innerText = '#あかねの適当診断';
+  tweetDivided.appendChild(anchor);
+
+  // widgets.js の設定
+  const script = document.createElement('script');
+  script.setAttribute('src', 'https://platform.twitter.com/widgets.js');
+  tweetDivided.appendChild(script);
+
 };
 
+userNameInput.onkeydown = (event) => {
+  if (event.key === 'Enter') {
+    assessmentButton.onclick();
+  }
+};
+
+//リロードボタン
 reload_button.onclick = () => {
   location.reload();
 }

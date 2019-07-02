@@ -38,3 +38,7 @@
 #reload-button:hover{
   color:rgb(252, 235, 140);
 }
+
+#tweet-area{
+  text-align: right;
+}

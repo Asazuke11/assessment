@@ -30,3 +30,11 @@
   filter: drop-shadow(1px 0px 5px rgb(138, 137, 137));
   z-index: 3;
 }
+
+#reload-button{
+  text-align: center;
+  border: dotted 2px snow;
+}
+#reload-button:hover{
+  color:rgb(252, 235, 140);
+}

@@ -15,6 +15,7 @@ const moji_4 = document.getElementById('moji4');
 const moji_5 = document.getElementById('moji5');
 const think_akane = document.getElementById('think_akane');
 const result = document.getElementById('result');
+const reload_button = document.getElementById('reload-button');
 
 const BGM = {
   music: new Audio('./audio/m_set_103.mp3'),
@@ -83,6 +84,10 @@ assessmentButton.onclick = () => {
 
   // TODO ツイートエリアの作成
 };
+
+reload_button.onclick = () => {
+  location.reload();
+}
 
 const answers = [
   '{userName}のいいところは声です。{userName}の特徴的な声は皆を惹きつけ、心に残ります。',

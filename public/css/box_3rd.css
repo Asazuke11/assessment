@@ -1,0 +1,44 @@
+
+.result{
+  position: relative;
+  display: none;
+  margin-top:15px;
+  margin-right: auto;
+  margin-left:auto;
+  width:790px;
+  height: 340px;
+  background: linear-gradient( 0deg, rgba(244, 245, 157, 0.253), rgba(255, 255, 255, 0)),url(../images/p_da0326_l_da03260.png);
+  border:6px solid rgb(0, 0, 0);
+}
+
+.result-area{
+  position: absolute;
+  top: 30px;
+  right:30px;
+  padding:10px;
+  background-color: rgba(137, 43, 226, 0.267);
+  width:500px;
+  color:rgb(255, 255, 255);
+  text-shadow:1px 1px rgba(14, 12, 12, 0.61);
+  border:10px double snow;
+  z-index: 1;
+}
+
+.img_a{
+  position: absolute;
+  margin-left: 30px;
+  filter: drop-shadow(1px 0px 5px rgb(138, 137, 137));
+  z-index: 3;
+}
+
+#reload-button{
+  text-align: center;
+  border: dotted 2px snow;
+}
+#reload-button:hover{
+  color:rgb(252, 235, 140);
+}
+
+#tweet-area{
+  text-align: right;
+}

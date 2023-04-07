@@ -6,7 +6,7 @@
 ```
   
 GitHub Pages  
-https://asazuke11.github.io/assessment/
+https://asazuke11.github.io/assessment/public/index
 
 使用している画像・BGM　配布元リンク
 ---
